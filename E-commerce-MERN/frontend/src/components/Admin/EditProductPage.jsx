@@ -33,17 +33,16 @@ const EditProductPage = () => {
       [name]: value
     }));
   };
-    
-    const handleImageUpload = async (e) => {
-        const file = e.target.files[0];
-        console.log(file);
 
-    }
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(productData);
-    }
-    
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    console.log(file);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(productData);
+  };
+
   return (
     <div className="max-w-5xl mx-auto p-6 shadow-md rounded-md">
       <h2 className="text-3xl font-bold mb-6 ">Edit Product</h2>
@@ -142,23 +141,30 @@ const EditProductPage = () => {
             }
             className="w-full border-gray-300 border p-2 rounded-md"
           />
+        </div>
+
+        {/* Image Upload */}
+        <div className="mb-6">
+          <label className="block font-semibold mb-2">Upload Images</label>
+          <input type="file" onChange={handleImageUpload} />
+          <div className="flex gap-4 mt-4">
+            {productData.images.map((image, index) => (
+              <div key={index} className="">
+                <img
+                  src={image.url}
+                  alt={image.altText || "Product Image"}
+                  className="w-20 h-20 object-cover rounded-md shadow-md"
+                />
               </div>
-              
-              {/* Image Upload */}
-              <div className="mb-6">
-                  <label className="block font-semibold mb-2">
-                      Upload Images     
-                  </label>
-                  <input type="file" onChange={handleImageUpload} />
-                  <div className="flex gap-4 mt-4">
-                      {productData.images.map((image, index) => (
-                          <div key={index} className="">
-                              <img src={image.url} alt={image.altText || "Product Image"} className="w-20 h-20 object-cover rounded-md shadow-md" />
-                          </div>
-                      ))}
-                  </div>
-              </div>
-              <button type="submit" className="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors">Update Product</button>
+            ))}
+          </div>
+        </div>
+        <button
+          type="submit"
+          className="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors"
+        >
+          Update Product
+        </button>
       </form>
     </div>
   );
