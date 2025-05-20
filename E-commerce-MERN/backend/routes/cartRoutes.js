@@ -19,7 +19,7 @@ const getCart = async (userId, guestId) => {
 // @route POST /api/cart
 // @desc Add product to cart for guest or logged-in user
 // @access Public
-router.post("/", protect, async (req, res) => {
+router.post("/", async (req, res) => {
   const { productId, quantity, size, color, guestId, userId } = req.body;
 
   try {
@@ -94,7 +94,7 @@ router.post("/", protect, async (req, res) => {
 // @route PUT /api/cart
 // @desc Update product quantity in cart
 // @access Public
-router.put("/", protect, async (req, res) => {
+router.put("/", async (req, res) => {
   const { productId, quantity, size, color, guestId, userId } = req.body;
 
   try {
@@ -139,7 +139,7 @@ router.put("/", protect, async (req, res) => {
 // @route DELETE /api/cart
 // @desc Remove product from cart
 // @access Public
-router.delete("/", protect, async (req, res) => {
+router.delete("/", async (req, res) => {
   const { productId, size, color, guestId, userId } = req.body;
 
   try {
@@ -180,7 +180,7 @@ router.delete("/", protect, async (req, res) => {
 // @route GET /api/cart
 // @desc Get cart for logged-in user or guest
 // @access Public
-router.get("/", protect, async (req, res) => {
+router.get("/", async (req, res) => {
   const { guestId, userId } = req.query;
 
   try {
@@ -201,12 +201,12 @@ router.get("/", protect, async (req, res) => {
 // @desc Merge cart for logged-in user or guest
 // @access Private
 router.post("/merge", protect, async (req, res) => {
-  const { guestId, userId } = req.body;
+  const { guestId } = req.body;
 
   try {
-    // Find the cart by userId or guestId
-    const guestCart = await getCart({ guestId });
-    const userCart = await getCart({ user: req.user._Id });
+    // Find the guest cart and user cart
+    const guestCart = await Cart.findOne({ guestId });
+    const userCart = await Cart.findOne({ user: req.user._id });
 
     if (guestCart) {
       if (guestCart.products.length === 0) {
@@ -253,6 +253,7 @@ router.post("/merge", protect, async (req, res) => {
       }
     } else {
       if (userCart) {
+        // Guest cart has already been merged
         return res.status(200).json(userCart);
       }
       res.status(404).json({ message: "Guest Cart not found" });
