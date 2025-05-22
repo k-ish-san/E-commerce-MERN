@@ -18,12 +18,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://www.llbean.com/llb/shop/34441?page=wrinkle-resistant-classic-oxford-cloth-shirt-traditional-fit-university-stripe",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747915835/6dfc6132-7e09-4cc1-ae2c-4dc08616e629_hftcor.webp",
         altText: "Classic Oxford Button-Down Shirt Front View",
       },
       {
-        url: "https://propercloth.com/dress-shirts/american-pima-light-blue-oxford-cloth-364762.html",
-
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747918933/s25_101-206-oxford-hutcheson-dress-shirt_ltgrey_001_xfq72r.jpg",
         altText: "Classic Oxford Button-Down Shirt Back View",
       },
     ],
@@ -47,11 +46,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://www.kennethcole.com/products/ls-slim-fit-kenneth-cole-natural-stretch-dress-shirt-32c1155-black-smoke",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919021/Lint-Stretch-Oxford-Shirt-Slim-Fit-front-295990049_900x1125_crop_center_mj6x44.png",
         altText: "Slim-Fit Stretch Shirt Front View",
       },
       {
-        url: "https://us.mossbros.com/slim-fit-dark-blue-stretch-shirt-966813309",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919103/202203-3220032-468-model-bv-1_bj1ybr.jpg",
         altText: "Slim-Fit Stretch Shirt Back View",
       },
     ],
@@ -75,12 +74,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://gitmanvintage.com/products/blue-oxford",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919227/estilocus_vudu2364_earfgs.png",
         altText: "Casual Denim Shirt Front View",
       },
       {
-        url: "https://www.witheredfig.com/products/gitman-vintage-oxford-shirt-blue",
-
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919335/back-view-of-young-casual-guy-wearing-denim-shirt-and-standing-isolated-on-white-background-full-body-2C00DX2_qgx5uj.jpg",
         altText: "Casual Denim Shirt Back View",
       },
     ],
@@ -104,13 +102,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://www.thombrowne.com/us/shopping/classic-oxford-button-down-shirt-17359340",
-
+        url: "https://picsum.photos/500/500?random=45",
         altText: "Printed Resort Shirt Front View",
       },
       {
-        url: "https://losangelesapparel.net/products/rcp402-classic-long-sleeve-oxford-button-down-shirt",
-
+        url: "https://picsum.photos/500/500?random=1",
         altText: "Printed Resort Shirt Back View",
       },
     ],
@@ -134,8 +130,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://propercloth.com/dress-shirts/clark-white-oxford-cloth-343258.html",
-
+        url: "https://picsum.photos/500/500?random=47",
         altText: "Slim-Fit Easy-Iron Shirt Front View",
       },
       {
@@ -191,7 +186,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=5",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920055/SaloonT-ShirtGSBurgundyBrownA5A8S-RBQV5066_d6fcffb6-f6e3-4bd0-b94b-2b196a3afa6a_puc7ds.jpg",
         altText: "Oversized Graphic T-Shirt Front View",
       },
     ],
@@ -215,7 +210,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=6",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920088/71I6aAR2YqL._AC_UY1100__gumczv.jpg",
         altText: "Regular-Fit Henley Shirt Front View",
       },
     ],
@@ -239,7 +234,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=7",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920125/COMPANIONTHERMAL_RK434_MIL_0518_o9nxyb.jpg",
         altText: "Long-Sleeve Thermal Tee Front View",
       },
     ],
@@ -263,7 +258,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=8",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920209/XMLS-20006-BURGUNDY-01_d38lsl.jpg",
         altText: "V-Neck Classic T-Shirt Front View",
       },
     ],
@@ -287,7 +282,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=9",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920346/ONIA-R25-M-ECOMM-1003-0360_yneu2t.jpg",
         altText: "Slim Fit Joggers Front View",
       },
     ],
@@ -311,7 +306,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=10",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920275/IMG_1736__22424.1730761587_kqlszx.jpg",
         altText: "Cargo Joggers Front View",
       },
     ],
@@ -335,7 +330,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=11",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920246/joggers_2t_noah_slim_jog_black_front_ilu0no.jpg",
         altText: "Tapered Sweatpants Front View",
       },
     ],
@@ -359,7 +354,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=12",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920381/charleston-denim-jeans-medium-wash-medium-wash-front-5418-2_bmzhxz.jpg",
         altText: "Denim Jeans Front View",
       },
     ],
@@ -383,14 +378,13 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=13",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920422/Harvest-Gold-Mens-Slim-Fit-Smart-360-Flex-Ultimate-Chino-Pants-front-794880238_900x1125_crop_center_gm5w9o.png",
         altText: "Chino Pants Front View",
       },
     ],
     rating: 4.8,
     numReviews: 15,
   },
-
   {
     name: "Track Pants",
     description:
@@ -408,7 +402,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=14",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920491/IMG_5540_akysrl.jpg",
         altText: "Track Pants Front View",
       },
     ],
@@ -432,7 +426,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=15",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920543/71NMV1bMKDL._AC_UY1000__foolzx.jpg",
         altText: "Slim Fit Trousers Front View",
       },
     ],
@@ -456,7 +450,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=16",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747920654/m_corduroy_fatique_pant_travertine_03_wmjdau.jpg",
         altText: "Cargo Pants Front View",
       },
     ],
@@ -480,7 +474,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=17",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747921079/DSC6322_800x_h1idvz.jpg",
         altText: "Relaxed Fit Sweatpants Front View",
       },
     ],
@@ -504,13 +498,14 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=18",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747921108/angled_view_with_a_close_fit_of_Pant_Project_raven_black_stretchable_trousers_hwafju.jpg",
         altText: "Formal Dress Pants Front View",
       },
     ],
     rating: 4.9,
     numReviews: 8,
   },
+
   {
     name: "High-Waist Skinny Jeans",
     description:
@@ -994,3 +989,39 @@ const products = [
 ];
 
 module.exports = products;
+
+
+
+
+
+
+
+
+// MEN'S CLOTHING
+
+//Classic Oxford Button-Down Shirt Front View
+//Classic Oxford Button-Down Shirt Back View
+//Slim-Fit Stretch Shirt Front View
+//Slim-Fit Stretch Shirt Back View
+//Casual Denim Shirt Front View
+//Casual Denim Shirt Back View
+//Printed Resort Shirt Front View
+//Printed Resort Shirt Back View
+//Slim-Fit Easy-Iron Shirt Front View
+//Slim-Fit Easy-Iron Shirt Front View
+//Polo T-Shirt Front View
+//Polo T-Shirt Back View
+//Oversized Graphic T-Shirt Front View
+//Regular-Fit Henley Shirt Front View
+//Long-Sleeve Thermal Tee Front View
+//V-Neck Classic T-Shirt Front View
+//Slim Fit Joggers Front View
+//Cargo Joggers Front View
+//Tapered Sweatpants Front View
+//Denim Jeans Front View
+//Chino Pants Front View
+//Track Pants Front View
+//Slim Fit Trousers Front View
+//Cargo Pants Front View
+//Relaxed Fit Sweatpants Front View
+//Formal Dress Pants Front View

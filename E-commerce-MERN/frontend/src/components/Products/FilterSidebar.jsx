@@ -52,7 +52,7 @@ const FilterSidebar = () => {
 
   useEffect(() => {
     const params = Object.fromEntries([...searchParams]);
-
+    
     setFilters({
       category: params.category || "",
       gender: params.gender || "",
@@ -96,11 +96,18 @@ const FilterSidebar = () => {
     navigate(`?${params.toString()}`); // ?category=Bottom+wear&size=XS%2CS
   };
 
+  const handleColorChange = (color) => {
+    const newFilters = { ...filters, color };
+    setFilters(newFilters);
+    updateURLParams(newFilters);
+  };
+  
+
   const handlePriceChange = (e) => {
     const newPrice = e.target.value;
     setPriceRange([0, newPrice]);
     const newFilters = { ...filters, minPrice: 0, maxPrice: newPrice }
-    setFilters(filters)
+    setFilters(newFilters)
     updateURLParams(newFilters)
   };
 
@@ -157,7 +164,7 @@ const FilterSidebar = () => {
               key={color}
               name="color"
               value={color}
-              onClick={handleFilterChange}
+              onClick={() => handleColorChange(color)}
               className={`w-8 h-8 rounded-full border border-gray-300 cursor-pointer transition hover:scale-105 ${
                 filters.color === color ? "ring-2 ring-blue-500" : ""
               }`}
