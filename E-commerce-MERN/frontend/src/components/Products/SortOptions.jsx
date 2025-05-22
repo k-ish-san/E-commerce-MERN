@@ -18,16 +18,16 @@ const SortOptions = () => {
         name=""
         className="border p-2 rounded-md focus:outline-none"
       >
-        <option value="" className="">
+        <option>
           Default
         </option>
-        <option value="priceAsc" className="">
+        <option value="priceAsc">
           Price: Low to High
         </option>
-        <option value="priceDesc" className="">
+        <option value="priceDesc">
           Price: High to Low
         </option>
-        <option value="popularity" className="">
+        <option value="popularity">
           Popularity
         </option>
       </select>

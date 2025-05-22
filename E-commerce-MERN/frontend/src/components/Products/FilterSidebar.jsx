@@ -5,7 +5,7 @@ const FilterSidebar = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const [filters, setFilters] = useState({
-    catgeory: "",
+    category: "",
     gender: "",
     color: "",
     size: [],

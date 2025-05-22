@@ -18,11 +18,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=39",
+        url: "https://www.llbean.com/llb/shop/34441?page=wrinkle-resistant-classic-oxford-cloth-shirt-traditional-fit-university-stripe",
         altText: "Classic Oxford Button-Down Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=40",
+        url: "https://propercloth.com/dress-shirts/american-pima-light-blue-oxford-cloth-364762.html",
+
         altText: "Classic Oxford Button-Down Shirt Back View",
       },
     ],
@@ -46,11 +47,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=41",
+        url: "https://www.kennethcole.com/products/ls-slim-fit-kenneth-cole-natural-stretch-dress-shirt-32c1155-black-smoke",
         altText: "Slim-Fit Stretch Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=42",
+        url: "https://us.mossbros.com/slim-fit-dark-blue-stretch-shirt-966813309",
         altText: "Slim-Fit Stretch Shirt Back View",
       },
     ],
@@ -74,11 +75,12 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=43",
+        url: "https://gitmanvintage.com/products/blue-oxford",
         altText: "Casual Denim Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=44",
+        url: "https://www.witheredfig.com/products/gitman-vintage-oxford-shirt-blue",
+
         altText: "Casual Denim Shirt Back View",
       },
     ],
@@ -102,11 +104,13 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=45",
+        url: "https://www.thombrowne.com/us/shopping/classic-oxford-button-down-shirt-17359340",
+
         altText: "Printed Resort Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=1",
+        url: "https://losangelesapparel.net/products/rcp402-classic-long-sleeve-oxford-button-down-shirt",
+
         altText: "Printed Resort Shirt Back View",
       },
     ],
@@ -130,7 +134,8 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=47",
+        url: "https://propercloth.com/dress-shirts/clark-white-oxford-cloth-343258.html",
+
         altText: "Slim-Fit Easy-Iron Shirt Front View",
       },
       {
@@ -385,6 +390,7 @@ const products = [
     rating: 4.8,
     numReviews: 15,
   },
+
   {
     name: "Track Pants",
     description:
