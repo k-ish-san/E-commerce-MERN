@@ -1,60 +1,67 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const UserManagement = () => {
-  const users = [
-    {
-      _id: "12345",
-      name: "John Doe",
-      email: "FtDZK@example.com",
-      role: "Admin"
-    },
-    {
-      _id: "13325",
-      name: "Jane Doe",
-      email: "M9K8X@example.com",
-      role: "User"
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { user } = useSelector((state) => state.auth);
+  const { users, loading, error } = useSelector((state) => state.admin);
+
+  useEffect(() => {
+    if (user && user.role !== "admin") {
+      navigate("/");
     }
-  ];
+  }, [user, navigate]);
+
+  useEffect(() => {
+    if(user && user.role === "admin") {
+      dispatch(fetchUsers());
+    }
+  }, [dispatch, user]);
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
-    role: "customer" //default
+    role: "customer", //default
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("User Registered: ", formData);
+    dispatch(addUser(formData));
     //Reset the form after submission
     setFormData({
       name: "",
       email: "",
       password: "",
-      role: "customer"
+      role: "customer",
     });
   };
 
   const handleRoleChange = (userId, newRole) => {
-    console.log("User role updated: ", userId, newRole);
+    dispatch(updateUser({ id: userId, role: newRole }));
   };
-    
-    const handleDeleteUser = (userId) => {
-        if (window.confirm("Are you sure you want to delete this user?")) {
-         console.log("User deleted: ", userId);
-        }
-    };
+
+  const handleDeleteUser = (userId) => {
+    if (window.confirm("Are you sure you want to delete this user?")) {
+      dispatch(deleteUser(userId));
+    }
+  };
 
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h2 className="text-2xl font-bold mb-4 ">User Management</h2>
+      {loading && <p>Loading...</p>}
+      {error && <p className="text-red-500">Error: {error}</p>}
       {/* Add new user */}
       <div className="p-6 rounded-lg mb-6">
         <h3 className="text-lg font-bold mb-4">Add New User</h3>
@@ -151,10 +158,13 @@ const UserManagement = () => {
                     </option>
                   </select>
                 </td>
-                    <td className="p-4 ">
-                        <button onClick={() => handleDeleteUser(user._id)} className="bg-red-500 py-2 px-4 text-white rounded hover:bg-red-600">
-                            Delete
-                        </button>
+                <td className="p-4 ">
+                  <button
+                    onClick={() => handleDeleteUser(user._id)}
+                    className="bg-red-500 py-2 px-4 text-white rounded hover:bg-red-600"
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             ))}

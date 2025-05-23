@@ -93,7 +93,7 @@ const adminOrderSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
-      // Handle update order status
+      //  update order status
 
       .addCase(updateOrderStatus.fulfilled, (state, action) => {
         const updatedOrder = action.payload;

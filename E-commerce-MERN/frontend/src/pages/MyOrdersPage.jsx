@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchUserOrders } from "../redux/slices/orderSlice";
 
 const MyOrdersPage = () => {
- 
+    
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const { orders, loading, error } = useSelector((state) => state.orders)
@@ -16,7 +17,7 @@ const MyOrdersPage = () => {
     navigate(`/order/${orderId}`);
   }
 
-  if (loading) return <P>Loading ...</P>
+  if (loading) return <p>Loading ...</p>
   if (error) return <p>Error: {error}</p>
 
   return (
