@@ -4,7 +4,7 @@ import axios from 'axios';
 // Async thunk to fetch user orders
 export const fetchUserOrders = createAsyncThunk(
   "orders/fetchUserOrders",
-    async (userId, { rejectWithValue }) => {
+    async (_, { rejectWithValue }) => {
         try {
             const response = await axios.get(
                 `${import.meta.env.VITE_BACKEND_URL}/api/orders/my-orders`,
@@ -85,4 +85,3 @@ const orderSlice = createSlice({
 });
 
 export default orderSlice.reducer;
-

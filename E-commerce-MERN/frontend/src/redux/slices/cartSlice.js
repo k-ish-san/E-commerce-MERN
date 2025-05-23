@@ -82,7 +82,7 @@ export const removeFromCart = createAsyncThunk(
   }
 );
 
-// Merge quest cart with user cart
+// Merge guest cart with user cart
 export const mergeCart = createAsyncThunk(
   "cart/mergeCarts",
   async ({ userId, guestId }, { rejectWithValue }) => {
@@ -98,7 +98,7 @@ export const mergeCart = createAsyncThunk(
       );
       return response.data;
     } catch (error) {
-      return rejectWithValue(error.response.data);
+      return rejectWithValue(error.response?.data);
     }
   }
 );

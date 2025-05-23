@@ -45,14 +45,24 @@ export const registerUser = createAsyncThunk(
     try {
       const response = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/api/users/register`,
-        userData
+        userData, {
+          headers: {
+            "Content-Type": "application/json",
+          }
+      }
       );
       localStorage.setItem("userInfo", JSON.stringify(response.data.user));
       localStorage.setItem("userToken", response.data.token);
 
       return response.data.user; // Return user data
     } catch (error) {
-      return rejectWithValue(error.response.data.message);
+      console.error("Register error response:", error.response);
+      return rejectWithValue(
+      error.response?.data?.message || 
+      error.response?.data || 
+      error.message || 
+      "Unknown error"
+     );
     }
   }
 );
@@ -81,12 +91,13 @@ const authSlice = createSlice({
         state.error = null;
       })
       .addCase(loginUser.fulfilled, (state, action) => {
+        localStorage.setItem("userToken", action.payload.token); // set token first
         state.loading = false;
         state.user = action.payload; // Set user data on successful login
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload.message; // Set error message on failed login
+        state.error = action.payload; // Set error message on failed login
       })
       .addCase(registerUser.pending, (state) => {
         state.loading = true;
@@ -98,7 +109,7 @@ const authSlice = createSlice({
       })
       .addCase(registerUser.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload.message; // Set error message on failed registration
+        state.error = action.payload; // Set error message on failed registration
       });
   },
 });

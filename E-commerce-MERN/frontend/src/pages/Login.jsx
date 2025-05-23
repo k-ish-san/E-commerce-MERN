@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import login from "../assets/login.webp"
 import { loginUser } from "../redux/slices/authSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
+import {mergeCart} from "../redux/slices/cartSlice"
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -21,7 +23,7 @@ const Login = () => {
   useEffect(() => {
     if (user) {
       if (cart?.products.length > 0 && guestId) {
-        dispatch(mereCart({ guestId, user })).then(() => {
+        dispatch(mergeCart({ guestId, user })).then(() => {
             navigate(isCheckoutRedirect ? "/checkout" : "/");
         })
       } else {
