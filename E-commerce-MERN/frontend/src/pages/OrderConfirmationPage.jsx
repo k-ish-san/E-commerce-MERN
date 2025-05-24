@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { clearCart } from "../redux/slices/cartSlice";
+import { useEffect } from "react";
 
 const OrderConfirmationPage = () => {
   const dispatch = useDispatch();
@@ -12,7 +14,7 @@ const OrderConfirmationPage = () => {
       dispatch(clearCart());
       localStorage.removeItem("cart");
     } else {
-      navigate("/my-order");
+      navigate("/my-orders");
     }
     
   }, [checkout, dispatch, navigate]);
