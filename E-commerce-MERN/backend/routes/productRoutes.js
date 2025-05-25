@@ -315,16 +315,5 @@ router.get("/similar/:id", async (req, res) => {
   }
 });
 
-// @route GET /api/products/best-sellers
-// @desc Get best-selling products with highest ratings
-// @access Public
-router.get("/best-sellers", async (req, res) => {
-  try {
-    res.send("Best Sellers");
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: "Server Error" });
-  }
-});
 
 module.exports = router;
