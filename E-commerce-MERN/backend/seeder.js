@@ -27,10 +27,10 @@ const seedData = async () => {
         });
 
         // Assign the default admin user ID to each products
-        const userID = createdUser._id;
+        const userId = createdUser._id;
 
         const sampleProducts = products.map((product) => {
-            return { ...product, user: userID }
+            return { ...product, user: userId }
         });
 
         //Insert the products into the database

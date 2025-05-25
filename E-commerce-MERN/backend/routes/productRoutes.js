@@ -154,7 +154,7 @@ router.delete("/:id", protect, admin, async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const {
-      collections,
+      collection,
       size,
       color,
       gender,
@@ -170,8 +170,8 @@ router.get("/", async (req, res) => {
     let query = {};
 
     // Filter logic
-    if (collections && collections.toLocaleLowerCase() !== "all") {
-      query.collections = collections;
+    if (collection && collection.toLocaleLowerCase() !== "all") {
+      query.collections = collection;
     }
     if (category && category.toLocaleLowerCase() !== "all") {
       query.category = category;
