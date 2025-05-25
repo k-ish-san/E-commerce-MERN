@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 3000;
 //connect to mongodb
 connectDB();
 
-app.get("/", (res) => {
+app.get("/", (req, res) => {
   res.send("Welcome to the API!");
 });
 
