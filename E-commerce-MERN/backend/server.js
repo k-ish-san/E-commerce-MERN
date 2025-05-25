@@ -22,11 +22,7 @@ dotenv.config();
 const PORT = process.env.PORT || 3000;
 
 //connect to mongodb
-connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-  });
-});
+connectDB();
 
 
 app.get("/", (req, res) => {
