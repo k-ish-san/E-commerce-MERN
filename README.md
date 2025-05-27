@@ -4,6 +4,9 @@ This is a **fully functional e-commerce website** built with the **MERN stack** 
 
 This project serves as a **real-world, full-stack application** — perfect for demonstrating development skills and deepening your understanding of modern web technologies.
 
+![App Preview](./Preview/rabbit.png)
+
+
 ---
 
 ## ✨ Key Features
