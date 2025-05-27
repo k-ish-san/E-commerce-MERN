@@ -147,7 +147,7 @@ const UserManagement = () => {
                 <td className="p-4">
                   <select
                     
-                    className="P-2 border rounded"
+                    className="p-2 border rounded"
                     onChange={(e) => handleRoleChange(user._id, e.target.value)}
                     value={user.role}
                   >
