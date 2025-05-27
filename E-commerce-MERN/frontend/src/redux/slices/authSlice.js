@@ -9,7 +9,7 @@ const userFromStorage = localStorage.getItem("userInfo")
 // Check for an existing guest ID in local storage or generate a new one
 const initialGuestId =
   localStorage.getItem("guestId") || `guest_${new Date().getTime()}`;
-localStorage.setItem("guestId", initialGuestId);
+  localStorage.setItem("guestId", initialGuestId);
 
 // Initial state for the auth slice
 const initialState = {
@@ -30,10 +30,10 @@ export const loginUser = createAsyncThunk(
       );
       localStorage.setItem("userInfo", JSON.stringify(response.data.user));
       localStorage.setItem("userToken", response.data.token);
-
       return response.data.user; // Return user data
+
     } catch (error) {
-      return rejectWithValue(error.response.data.message);
+      return rejectWithValue(error.response.data);
     }
   }
 );
@@ -62,7 +62,7 @@ export const registerUser = createAsyncThunk(
       error.response?.data || 
       error.message || 
       "Unknown error"
-     );
+      );
     }
   }
 );
@@ -91,7 +91,6 @@ const authSlice = createSlice({
         state.error = null;
       })
       .addCase(loginUser.fulfilled, (state, action) => {
-        localStorage.setItem("userToken", action.payload.token); // set token first
         state.loading = false;
         state.user = action.payload; // Set user data on successful login
       })

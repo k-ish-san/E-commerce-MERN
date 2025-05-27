@@ -8,9 +8,9 @@ import { useSelector } from "react-redux";
 import { mergeCart } from "../redux/slices/cartSlice";
 
 const Register = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
   const dispatch = useDispatch();
 
   
