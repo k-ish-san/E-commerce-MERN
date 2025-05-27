@@ -19,8 +19,8 @@ const CollectionPage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
-    dispatch(fetchProductsByFilters({ collection, queryParams }));
-  }, [dispatch, collection, searchParams]);
+    dispatch(fetchProductsByFilters({ collection, ...queryParams }));
+  }, [dispatch, collection, JSON.stringify(queryParams)]);
 
   const toggleSidebar = () => {
     
