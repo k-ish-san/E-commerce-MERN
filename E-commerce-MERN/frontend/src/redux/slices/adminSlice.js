@@ -5,7 +5,7 @@ import axios from 'axios';
 export const fetchUsers = createAsyncThunk(
     "admin/fetchAllUsers", async () => {
         const response = await axios.get(
-            `${import.meta.env.VITE_BACKEND_URL}/api/users`,
+            `${import.meta.env.VITE_BACKEND_URL}/api/admin/users`,
             {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("userToken")}`,
