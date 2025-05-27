@@ -13,14 +13,15 @@ const CollectionPage = () => {
   const [ searchParams ] = useSearchParams();
   const dispatch = useDispatch();
   const { products, loading, error } = useSelector((state) => state.products);
-  const queryParams = Object.fromEntries([...searchParams]);
+  
 
   const sidebarRef = useRef(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
+    const queryParams = Object.fromEntries([...searchParams]);
     dispatch(fetchProductsByFilters({ collection, ...queryParams }));
-  }, [dispatch, collection, JSON.stringify(queryParams)]);
+  }, [dispatch, collection, searchParams]);
 
   const toggleSidebar = () => {
     

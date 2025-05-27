@@ -14,9 +14,10 @@ const CartContents = ({ cart, userId, guestId }) => {
         updateCartItemQuantity({
           productId,
           quantity: newQuantity,
-          size,
-          color,
+          guestId,
           userId,
+          size,
+          color, 
         })
       );
     }
@@ -86,6 +87,7 @@ const CartContents = ({ cart, userId, guestId }) => {
               onClick={() =>
                 handleRemoveFromCart(
                   product.productId,
+                  product.quantity,
                   product.size,
                   product.color
                 )
