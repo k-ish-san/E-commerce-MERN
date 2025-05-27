@@ -30,7 +30,7 @@ export const loginUser = createAsyncThunk(
       );
       localStorage.setItem("userInfo", JSON.stringify(response.data.user));
       localStorage.setItem("userToken", response.data.token);
-      return response.data.user; // Return user data
+      return { ...response.data.user, token: response.data.token }; // Return user data
 
     } catch (error) {
       return rejectWithValue(error.response.data);
@@ -53,8 +53,9 @@ export const registerUser = createAsyncThunk(
       );
       localStorage.setItem("userInfo", JSON.stringify(response.data.user));
       localStorage.setItem("userToken", response.data.token);
+      return { ...response.data.user, token: response.data.token };
 
-      return response.data.user; // Return user data
+      
     } catch (error) {
       console.error("Register error response:", error.response);
       return rejectWithValue(
