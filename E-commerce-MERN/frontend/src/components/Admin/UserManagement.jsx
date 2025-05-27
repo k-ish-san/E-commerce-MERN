@@ -82,7 +82,7 @@ const UserManagement = () => {
             <label className="block text-gray-700">Email</label>
             <input
               type="email"
-              name="name"
+              name="email"
               value={formData.email}
               required
               onChange={handleChange}
@@ -93,7 +93,7 @@ const UserManagement = () => {
             <label className="block text-gray-700">Password</label>
             <input
               type="password"
-              name="name"
+              name="password"
               value={formData.password}
               required
               onChange={handleChange}
@@ -128,7 +128,7 @@ const UserManagement = () => {
 
       {/* User list */}
       <div className="overflow-x-auto shadow-md sm:rounded-lg">
-        <table className="min-2-full text-left text-gray-500">
+        <table className="min-w-full text-left text-gray-500">
           <thead className="bg-gray-100 text-xs uppercase text-gray-700">
             <tr className="">
               <th className="py-3 px-4">Name</th>
@@ -146,7 +146,7 @@ const UserManagement = () => {
                 <td className="p-4">{user.email}</td>
                 <td className="p-4">
                   <select
-                    name=""
+                    
                     className="P-2 border rounded"
                     onChange={(e) => handleRoleChange(user._id, e.target.value)}
                     value={user.role}
