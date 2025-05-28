@@ -22,6 +22,8 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 }));
+app.options("*", cors());
+
 
 
 dotenv.config();
