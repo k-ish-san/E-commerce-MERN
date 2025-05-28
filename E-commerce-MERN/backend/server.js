@@ -39,7 +39,7 @@ app.use(cors({
 
 dotenv.config();
 
-const PORT = process.env.PORT || 3000;
+
 
 //connect to mongodb
 connectDB();
@@ -62,5 +62,3 @@ app.use("/api", subscribeRoute);
 app.use("/api/admin/users", adminRoutes);
 app.use("/api/admin/products", productAdminRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
-
-
