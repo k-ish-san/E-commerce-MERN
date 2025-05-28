@@ -43,36 +43,35 @@ const Login = () => {
         <form
                   action=""
                   onSubmit={handleSubmit}
-          className="w-full max-w-md bg-white p-8 rounded-lg border shadow-sm"
+          className="w-full max-w-md bg-white p-8 rounded-lg border-4 border-b-fuchsia-600 shadow-sm"
         >
           <div className="flex justify-center mb-6">
-            <h2 className="text-xl font-medium ">Rabbit</h2>
+            <h2 className="text-3xl  font-mono font-bold ">Log In</h2>
           </div>
-          <h2 className="text-2xl font-bold text-center mb-6 ">Hey there!</h2>
-          <p className="text-center mb-6 ">
+          <p className="text-left mb-6 font-sans ">
             Enter your username and password to Login
           </p>
-          <div className="mb-4">
+          <div className="mb-4 font-mono">
             <label className="block text-sm font-semibold mb-2">Email</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border-2 border-b-fuchsia-600 rounded"
               placeholder="Enter your email address"
             />
           </div>
-          <div className="mb-4 ">
+          <div className="mb-4 font-mono">
             <label className="block text-sm font-semibold mb-2">Password</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border-2 border-b-fuchsia-600 rounded"
               placeholder="Enter your password"
             />
           </div>
-          <button className="w-full bg-black text-white p-2 rounded-lg font-semibold hover:bg-gray-800 transition">
+          <button className="w-full bg-black text-white p-3 rounded-lg text-lg font-semibold hover:bg-rose-500 transition font-sans">
             {loading ? "loading ..." : "Sign In"}
                   </button>
                   <p className="mt-6 text-center text-sm">
