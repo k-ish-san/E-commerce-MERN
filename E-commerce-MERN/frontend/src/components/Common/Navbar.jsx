@@ -111,39 +111,39 @@ const Navbar = () => {
       >
         <div className="flex justify-end p-4">
           <button onClick={toggleNavDrawer}>
-            <IoMdClose className="h-6 w-6 text-black bg-gray-100 rounded hover:bg-rabbit-red  hover:text-white" />
+            <IoMdClose className="h-6 w-6 text-white bg-black rounded hover:bg-rabbit-red  hover:text-white" />
           </button>
         </div>
         <div className="p-4">
-          <h2 className="text-xl font-semibold mb-3 p-4 rounded bg-gray-500">
-            Menu
+          <h2 className="text-white py-6 font-bold mb-6 p-4 rounded text-center  bg-black  ">
+            MENU
           </h2>
           <nav className="space-y-4 ">
             <Link
               to="/collections/all?gender=Men"
               onClick={toggleNavDrawer}
-              className="block p-3 bg-gray-200 rounded text-gray-600 hover:text-black"
+              className="block py-3 text-center font-semibold  rounded text-black bg-gray-200 hover:text-orange-800 hover:bg-orange-200" 
             >
               Men
             </Link>
             <Link
               to="collections/all?gender=Women"
               onClick={toggleNavDrawer}
-              className="block p-3 bg-gray-200 rounded text-gray-600 hover:text-black"
+              className="block py-3 text-center font-semibold  rounded text-black bg-gray-200 hover:text-orange-800 hover:bg-orange-200"
             >
               Women
             </Link>
             <Link
               to="collections/all?category=Top Wear"
               onClick={toggleNavDrawer}
-              className="block p-3 bg-gray-200 rounded text-gray-600 hover:text-black"
+              className="block py-3 text-center font-semibold  rounded text-black bg-gray-200 hover:text-orange-800 hover:bg-orange-200"
             >
               Top Wear
             </Link>
             <Link
               to="collections/all?category=Bottom Wear"
               onClick={toggleNavDrawer}
-              className="block p-3 bg-gray-200 rounded text-gray-600 hover:text-black"
+              className="block py-3 text-center font-semibold  rounded text-black bg-gray-200 hover:text-orange-800 hover:bg-orange-200"
             >
               Bottom Wear
             </Link>
