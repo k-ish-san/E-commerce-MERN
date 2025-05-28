@@ -13,3 +13,14 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB; 
+
+
+
+
+// {
+//   "version": 2,
+//   "name": "backend",
+//   "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+//   "routes": [{ "src": "/*", "dest": "server.js" }]
+// }
+
