@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PayPalButton from "./PayPalButton";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
+import { createCheckout } from "../../redux/slices/checkoutSlice";
 
 const Checkout = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const Checkout = () => {
 
   // Ensure cart is loaded before processing
   useEffect(() => {
-    if (!cart || !cart.product || cart.products.length === 0) {
+    if (!cart || !cart.products || cart.products.length === 0) {
       navigate("/");
     }
   }, [cart, navigate]);

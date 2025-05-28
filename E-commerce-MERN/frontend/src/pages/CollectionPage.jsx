@@ -68,7 +68,7 @@ const CollectionPage = () => {
         <FilterSidebar />
       </div>
       <div className="flex-grow border-4  border-rose-400 p-4 ">
-        <h2 className="text-2xl uppercase mb-4 font-sans">All Collection</h2>
+        <h2 className="text-2xl text-center uppercase mb-4 font-sans">All Collection</h2>
         {/* Sort Options */}
         <SortOptions />
         {/* ProductGrid */}

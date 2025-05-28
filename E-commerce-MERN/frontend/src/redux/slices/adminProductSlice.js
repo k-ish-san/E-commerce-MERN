@@ -99,7 +99,7 @@ const adminProductSlice = createSlice({
         }
       })
       .addCase(deleteProduct.fulfilled, (state, action) => {
-        state.products = state.products.filter((product) => product._id !== action.payload._id);
+        state.products = state.products.filter((product) => product._id !== action.payload);
       });
   },
 })
