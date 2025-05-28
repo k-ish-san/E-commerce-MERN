@@ -32,9 +32,8 @@ dotenv.config();
 connectDB();
 
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the API!");
-});
+// Your routes
+app.get("/", (req, res) => res.send("API is working"));
 
 // API Routes
 app.use("/api/users", userRoutes);
