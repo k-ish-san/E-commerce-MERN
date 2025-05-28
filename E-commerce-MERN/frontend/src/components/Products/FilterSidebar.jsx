@@ -112,12 +112,12 @@ const FilterSidebar = () => {
   };
 
   return (
-    <div className="p-4 ">
-      <h3 className="text-xl font-bold text-center text-gray-800 mb-4 ">Filter</h3>
+    <div className="p-4 bg-gray-800">
+      <h3 className="text-xl font-bold text-center text-white mb-4 ">Filter</h3>
 
       {/* Category Filter */}
       <div className="mb-6">
-        <label className="block text-gray-600 font-medium mb-2 ">
+        <label className="block text-gray-200 font-medium mb-2 ">
           Category
         </label>
 
@@ -138,7 +138,7 @@ const FilterSidebar = () => {
 
       {/* Gender Filter */}
       <div className="mb-6">
-        <label className="block text-gray-600 font-medium mb-2 ">Gender</label>
+        <label className="block text-gray-200 font-medium mb-2 ">Gender</label>
 
         {genders.map((gender) => (
           <div key={gender} className="flex items-center p-2 rounded-lg bg-gray-200 mb-1">
@@ -157,7 +157,7 @@ const FilterSidebar = () => {
 
       {/* Colors Filter */}
       <div className="mb-6">
-        <label className="block text-gray-600 font-medium mb-2 ">Color</label>
+        <label className="block text-gray-200 font-medium mb-2 ">Color</label>
         <div className="flex flex-wrap bg-gray-200 rounded-lg p-3 gap-3">
           {colors.map((color) => (
             <button
@@ -176,7 +176,7 @@ const FilterSidebar = () => {
 
       {/* Size */}
       <div className="mb-6">
-        <label className="block text-gray-600 font-medium mb-2">Size</label>
+        <label className="block text-gray-200 font-medium mb-2">Size</label>
         {sizes.map((size) => (
           <div key={size} className="flex items-center  bg-gray-200 rounded-lg p-2 mb-1">
             <input
@@ -195,7 +195,7 @@ const FilterSidebar = () => {
       {/* Material */}
 
       <div className="mb-6">
-        <label className="block text-gray-600 font-medium mb-2">Material</label>
+        <label className="block text-gray-200 font-medium mb-2">Material</label>
         {materials.map((material) => (
           <div key={material} className="flex bg-gray-200 rounded-lg p-2 items-center mb-1">
             <input
@@ -232,7 +232,7 @@ const FilterSidebar = () => {
 
       {/* Price Range Filter */}
       <div className="mb-8">
-        <label className="block text-gray-600 font-medium mb-2">
+        <label className="block text-gray-200 font-medium mb-2">
           Price Range
         </label>
         <input
@@ -244,9 +244,9 @@ const FilterSidebar = () => {
           onChange={handlePriceChange}
           className="w-full h-2 accent-blue-500 bg-gray-300 rounded-lg appearance-none cursor-pointer"
         />
-        <div className="flex justify-between text-gray-600 mt-2">
-          <span className="">$0</span>
-          <span className="">${priceRange[1]}</span>
+        <div className="flex justify-between text-gray-200 mt-2">
+          <span className="font-mono">$0</span>
+          <span className="font-mono">${priceRange[1]}</span>
         </div>
       </div>
     </div>
