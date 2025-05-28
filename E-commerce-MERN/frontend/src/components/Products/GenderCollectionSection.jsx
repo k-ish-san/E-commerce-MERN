@@ -19,7 +19,7 @@ const GenderCollectionSection = () => {
                         <Link
                             to="/collections/all?gender=Women"
                             className=" text-gray-900 underline"
-                        ><button className="bg-gray-500 text-white px-6 py-3 rounded-sm text-md hover:bg-red-500 hover:text-white">
+                        ><button className="bg-black text-white px-4 py-2 rounded-sm text-md hover:bg-red-500 hover:text-white">
                                 Shop Now
                             </button> 
                         </Link>
@@ -40,7 +40,7 @@ const GenderCollectionSection = () => {
                         <Link
                             to="/collections/all?gender=Men"
                             className=" text-gray-900 underline"
-                        ><button className="bg-gray-500 text-white px-6 py-3 rounded-sm text-md hover:bg-amber-500 hover:text-white"> Shop Now </button>
+                        ><button className="bg-black text-white px-4 py-2 rounded-sm text-md hover:bg-amber-500 hover:text-white"> Shop Now </button>
                             
                         </Link>
                     </div>
