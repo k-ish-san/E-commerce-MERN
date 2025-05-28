@@ -14,28 +14,20 @@ const productAdminRoutes = require("./routes/productAdminRoutes");
 const adminOrderRoutes = require("./routes/adminOrderRoutes");
 
 const app = express();
-
-
-// CORS config for Vercel
-app.use(cors({
-  origin: "https://mern-frontend-tau-two.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  credentials: true,
-}));
-app.options("*", cors());
-
-
+app.use(express.json());
+app.use(cors({ origin: "*" }));
 
 dotenv.config();
 
-
+const PORT = process.env.PORT || 3000;
 
 //connect to mongodb
 connectDB();
 
 
-// Your routes
-app.get("/", (req, res) => res.send("API is working"));
+app.get("/", (req, res) => {
+  res.send("Welcome to the API!");
+});
 
 // API Routes
 app.use("/api/users", userRoutes);
@@ -51,5 +43,6 @@ app.use("/api/admin/users", adminRoutes);
 app.use("/api/admin/products", productAdminRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
 
-
-module.exports = app
+app.listen(PORT, () => {
+  console.log(`Server is running on port http://localhost:${PORT}`);
+});
