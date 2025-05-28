@@ -118,7 +118,7 @@ const Navbar = () => {
           <h2 className="text-white py-6 font-bold mb-6 p-4 rounded text-center  bg-black  ">
             MENU
           </h2>
-          <nav className="space-y-4 ">
+          <nav className="space-y-4 font-sans">
             <Link
               to="/collections/all?gender=Men"
               onClick={toggleNavDrawer}

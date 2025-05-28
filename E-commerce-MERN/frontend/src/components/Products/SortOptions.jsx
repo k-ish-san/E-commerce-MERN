@@ -17,8 +17,7 @@ const SortOptions = () => {
         id="sort"
         onChange={handleSortChange}
         value={searchParams.get("sortBy") || ""}
-        name=""
-        className="border p-2 rounded-md focus:outline-none"
+        className="border p-2 rounded-md focus:outline-none font-sans"
       >
         <option>
           Default

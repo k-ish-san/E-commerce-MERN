@@ -112,8 +112,8 @@ const FilterSidebar = () => {
   };
 
   return (
-    <div className="p-4">
-      <h3 className="text-xl font-medium text-gray-800 mb-4 ">Filter</h3>
+    <div className="p-4 ">
+      <h3 className="text-xl font-bold text-center text-gray-800 mb-4 ">Filter</h3>
 
       {/* Category Filter */}
       <div className="mb-6">
@@ -122,7 +122,7 @@ const FilterSidebar = () => {
         </label>
 
         {categories.map((category) => (
-          <div key={category} className="flex items-center mb-1">
+          <div key={category} className="flex items-center p-2 rounded-lg bg-gray-200 mb-1">
             <input
               type="radio"
               name="category"
@@ -141,7 +141,7 @@ const FilterSidebar = () => {
         <label className="block text-gray-600 font-medium mb-2 ">Gender</label>
 
         {genders.map((gender) => (
-          <div key={gender} className="flex items-center mb-1">
+          <div key={gender} className="flex items-center p-2 rounded-lg bg-gray-200 mb-1">
             <input
               type="radio"
               name="gender"
@@ -158,14 +158,14 @@ const FilterSidebar = () => {
       {/* Colors Filter */}
       <div className="mb-6">
         <label className="block text-gray-600 font-medium mb-2 ">Color</label>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap bg-gray-200 rounded-lg p-3 gap-3">
           {colors.map((color) => (
             <button
               key={color}
               name="color"
               value={color}
               onClick={() => handleColorChange(color)}
-              className={`w-8 h-8 rounded-full border border-gray-300 cursor-pointer transition hover:scale-105 ${
+              className={`w-6 h-6 rounded-full border border-gray-800 cursor-pointer transition hover:scale-105 ${
                 filters.color === color ? "ring-2 ring-blue-500" : ""
               }`}
               style={{ backgroundColor: color.toLowerCase() }}
@@ -178,7 +178,7 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-600 font-medium mb-2">Size</label>
         {sizes.map((size) => (
-          <div key={size} className="flex items-center mb-1">
+          <div key={size} className="flex items-center  bg-gray-200 rounded-lg p-2 mb-1">
             <input
               type="checkbox"
               name="size"
@@ -197,7 +197,7 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-600 font-medium mb-2">Material</label>
         {materials.map((material) => (
-          <div key={material} className="flex items-center mb-1">
+          <div key={material} className="flex bg-gray-200 rounded-lg p-2 items-center mb-1">
             <input
               type="checkbox"
               name="material"
@@ -216,7 +216,7 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-600 font-medium mb-2">Brand</label>
         {brands.map((brand) => (
-          <div key={brand} className="flex items-center mb-1">
+          <div key={brand} className="flex items-center bg-gray-200 p-2 rounded-lg mb-1">
             <input
               type="checkbox"
               name="brand"

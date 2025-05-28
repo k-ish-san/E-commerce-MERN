@@ -50,11 +50,11 @@ const CollectionPage = () => {
   
   
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row bg-gray-200">
       {/* Mobile Filter button */}
       <button
         onClick={toggleSidebar}
-        className="lg:hidden border p-2 flex justify-center items-center"
+        className="lg:hidden border-4 border-fuchsia-800 p-2 flex justify-center items-center bg-black text-white font-sans"
       >
         <FaFilter className="mr-2" /> Filters
       </button>
@@ -67,8 +67,8 @@ const CollectionPage = () => {
       >
         <FilterSidebar />
       </div>
-      <div className="flex-grow p-4 ">
-        <h2 className="text-2xl uppercase mb-4 ">All Collection</h2>
+      <div className="flex-grow border-4  border-rose-400 p-4 ">
+        <h2 className="text-2xl uppercase mb-4 font-sans">All Collection</h2>
         {/* Sort Options */}
         <SortOptions />
         {/* ProductGrid */}
