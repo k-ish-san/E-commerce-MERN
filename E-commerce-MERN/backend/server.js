@@ -16,23 +16,10 @@ const adminOrderRoutes = require("./routes/adminOrderRoutes");
 const app = express();
 
 
-app.use(express.json());
-// ✅ Proper CORS setup
-const allowedOrigins = [
-  "https://mern-frontend-tau-two.vercel.app", // your frontend
-  "http://localhost:3000" // for local testing (optional)
-];
-
+// CORS config for Vercel
 app.use(cors({
-  origin: function (origin, callback) {
-    // allow requests with no origin like mobile apps or curl
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    } else {
-      return callback(new Error("Not allowed by CORS"));
-    }
-  },
+  origin: "https://mern-frontend-tau-two.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 }));
 
@@ -62,3 +49,6 @@ app.use("/api", subscribeRoute);
 app.use("/api/admin/users", adminRoutes);
 app.use("/api/admin/products", productAdminRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
+
+
+module.exports = app
