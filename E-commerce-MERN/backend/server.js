@@ -29,7 +29,7 @@ const corsOptions = {
   origin: (origin, callback) => {
     const allowedOrigins = [
       "http://192.168.98.73:5173",
-      "https://mern-frontend-tau-two.vercel.app/",
+      "https://mern-frontend-tau-two.vercel.app",
       "http://localhost:5173",
       process.env.FRONTEND_URL,
     ];
