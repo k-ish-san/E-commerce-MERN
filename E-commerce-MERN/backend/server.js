@@ -27,7 +27,12 @@ connectDB();
 
 const corsOptions = {
   origin: (origin, callback) => {
-    const allowedOrigins = ['http://localhost:3000', 'https://ecommerce-website-ten.vercel.app', 'http://localhost:5173', process.env.FRONTEND_URL];
+    const allowedOrigins = [
+      "http://localhost:3000",
+      "https://mern-frontend-tau-two.vercel.app/",
+      "http://localhost:5173",
+      process.env.FRONTEND_URL,
+    ];
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
       console.log("allowed origin :", origin);
