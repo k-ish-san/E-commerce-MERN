@@ -33,11 +33,11 @@ const corsOptions = {
       "http://localhost:5173",
       process.env.FRONTEND_URL,
     ];
+    console.log("Incoming request origin:", origin); // 👈 this will help
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
       console.log("allowed origin :", origin);
-    }
-    else {
+    } else {
       callback(new Error("Not allowed by CORS"));
     }
   },
