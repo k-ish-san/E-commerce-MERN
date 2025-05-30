@@ -14,7 +14,7 @@ const productAdminRoutes = require("./routes/productAdminRoutes");
 const adminOrderRoutes = require("./routes/adminOrderRoutes");
 
 const app = express();
-
+app.use(express.json());
 
 
 dotenv.config();
@@ -28,8 +28,8 @@ connectDB();
 const corsOptions = {
   origin: (origin, callback) => {
     const allowedOrigins = [
-      "http://192.168.98.73:5173",
       "https://mern-frontend-tau-two.vercel.app",
+      "http://192.168.98.73:5173",
       "http://localhost:5173",
       process.env.FRONTEND_URL,
     ];
@@ -47,7 +47,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.use(express.json());
+
 
 app.get("/", (req, res) => {
   res.send("Welcome to the API!");
