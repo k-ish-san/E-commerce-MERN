@@ -14,9 +14,6 @@ const productAdminRoutes = require("./routes/productAdminRoutes");
 const adminOrderRoutes = require("./routes/adminOrderRoutes");
 
 const app = express();
-
-
-
 dotenv.config();
 
 PORT = process.env.PORT || 3000;
@@ -66,7 +63,5 @@ app.use("/api", subscribeRoute);
 app.use("/api/admin/users", adminRoutes);
 app.use("/api/admin/products", productAdminRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
-
-
 
 module.exports = app;
