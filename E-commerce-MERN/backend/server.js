@@ -15,14 +15,33 @@ const adminOrderRoutes = require("./routes/adminOrderRoutes");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 
-//connect to mongodb
+// connect to mongodb
 connectDB();
+
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    const allowedOrigins = ['http://localhost:3000', 'https://ecommerce-website-ten.vercel.app', 'http://localhost:5173', process.env.FRONTEND_URL];
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+      console.log("allowed origin :", origin);
+    }
+    else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 
 
 app.get("/", (req, res) => {
