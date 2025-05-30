@@ -19,7 +19,7 @@ app.use(express.json());
 
 dotenv.config();
 
-
+PORT = process.env.PORT || 3000;
 
 // connect to mongodb
 connectDB();
@@ -67,4 +67,6 @@ app.use("/api/admin/users", adminRoutes);
 app.use("/api/admin/products", productAdminRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
 
-module.exports = app;
+app.listen(process.env.PORT, () => {
+  console.log(`Server running on port ${process.env.PORT}`);
+});
