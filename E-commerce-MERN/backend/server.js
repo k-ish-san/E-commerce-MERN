@@ -15,7 +15,7 @@ const adminOrderRoutes = require("./routes/adminOrderRoutes");
 
 const app = express();
 
-// app.use(cors({ origin: "*" }));
+
 
 dotenv.config();
 
