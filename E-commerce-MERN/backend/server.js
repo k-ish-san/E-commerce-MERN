@@ -14,7 +14,7 @@ const productAdminRoutes = require("./routes/productAdminRoutes");
 const adminOrderRoutes = require("./routes/adminOrderRoutes");
 
 const app = express();
-app.use(express.json());
+
 // app.use(cors({ origin: "*" }));
 
 dotenv.config();
@@ -47,7 +47,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Welcome to the API!");
