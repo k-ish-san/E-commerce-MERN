@@ -523,7 +523,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=19",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750174149/188820047-front-pdp_jeksbo.jpg",
         altText: "High-Waist Skinny Jeans",
       },
     ],
@@ -547,7 +547,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=20",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750178394/WHBM_Luna_20Wide_20Leg_20Trser_570330056_BLK000001_OF_MAIN_jngt2v.jpg",
         altText: "Wide-Leg Trousers Front View",
       },
     ],
@@ -571,7 +571,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=21",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750178448/X38212.TP_1_lo9jdc.jpg",
         altText: "Stretch Leggings Front View",
       },
     ],
@@ -595,7 +595,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=22",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750178560/9669681_912062_mknit3.jpg",
         altText: "Pleated Midi Skirt Front View",
       },
     ],
@@ -619,7 +619,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=23",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750178964/TamarindChutney_FridafulllengthPalazzoPants_17_1800x1800_punegy.jpg",
         altText: "Flared Palazzo Pants Front View",
       },
     ],
@@ -643,7 +643,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=24",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750179032/LW5FB9S_0001_1_qkar7g.jpg",
         altText: "High-Rise Joggers Front View",
       },
     ],
@@ -667,7 +667,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=25",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750179211/39c19445-97f6-4ab0-8c42-86037f0bb0b3_j5l0ac.jpg",
         altText: "Paperbag Waist Shorts Front View",
       },
     ],
@@ -691,7 +691,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=26",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750179369/0829602180103NEW_00_349_azylor.jpg",
         altText: "Stretch Denim Shorts Front View",
       },
     ],
@@ -715,7 +715,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=27",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181644/9701_3_20160616110430_wbr92y.jpg",
         altText: "Culottes Front View",
       },
     ],
@@ -739,7 +739,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=28",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181700/06_Classic-_E2_80_93-Overlay-Double-Pleated-Trousers-Oat-1-1-400x600_bdkgty.jpg",
         altText: "Classic Pleated Trousers Front View",
       },
     ],
@@ -763,7 +763,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=29",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181742/9302401_1852756_jrt2qo.jpg",
         altText: "Knitted Cropped Top",
       },
     ],
@@ -787,7 +787,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=30",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181771/gwen-crochet-v-neck-boho-floral-blouse_g5rsej.jpg",
         altText: "Boho Floral Blouse",
       },
     ],
@@ -811,7 +811,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=31",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181813/595341160d260daa0ee1c082b4b9246b_hqzgqx.jpg",
         altText: "Casual T-Shirt",
       },
     ],
@@ -835,7 +835,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=32",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181829/dani-shirt-dark-teal-model-relaxed_dhhwiv.jpg",
         altText: "Off-Shoulder Top",
       },
     ],
@@ -859,7 +859,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=33",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181861/d5bc18385b777c20d6e7533f3d768ca471acc41d_cnd5653_1_hevykh.jpg",
         altText: "Lace-Trimmed Cami Top",
       },
     ],
@@ -883,7 +883,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=34",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181918/TTS_661_ANIME_wOMEN_490x.progressive_z7ngse.jpg",
         altText: "Graphic Print Tee",
       },
     ],
@@ -907,7 +907,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=35",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181936/dalston-black-top_osjrpz.jpg",
         altText: "Ribbed Long-Sleeve Top",
       },
     ],
@@ -931,7 +931,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=36",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181969/2CG8320_1_lpaers.jpg",
         altText: "Ruffle-Sleeve Blouse",
       },
     ],
@@ -955,7 +955,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=37",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750181996/cn52750196_cqlffp.jpg",
         altText: "Classic Button-Up Shirt",
       },
     ],
@@ -979,7 +979,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=38",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1750182081/whistles-velvet-v-neck-wrap-top-navy-01_zhgu8n.jpg",
         altText: "V-Neck Wrap Top",
       },
     ],
