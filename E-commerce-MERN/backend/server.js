@@ -16,7 +16,7 @@ const adminOrderRoutes = require("./routes/adminOrderRoutes");
 const app = express();
 dotenv.config();
 
-PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 // connect to mongodb
 connectDB();
