@@ -49,6 +49,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Welcome to the API!");
 });
+app.options('*', cors(corsOptions));
 
 // API Routes
 app.use("/api/users", userRoutes);

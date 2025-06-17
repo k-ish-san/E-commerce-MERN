@@ -315,5 +315,8 @@ router.get("/similar/:id", async (req, res) => {
   }
 });
 
+router.get('/ping', (req, res) => {
+  res.json({ message: 'pong!' });
+});
 
 module.exports = router;
