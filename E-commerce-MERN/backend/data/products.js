@@ -997,7 +997,7 @@ module.exports = products;
 
 
 
-// MEN'S CLOTHING
+// MEN'S WEAR
 
 //Classic Oxford Button-Down Shirt Front View
 //Classic Oxford Button-Down Shirt Back View
@@ -1025,3 +1025,28 @@ module.exports = products;
 //Cargo Pants Front View
 //Relaxed Fit Sweatpants Front View
 //Formal Dress Pants Front View
+
+
+// WOMEN'S WEAR
+
+
+// High-Waist Skinny Jeans
+// Wide-Leg Trousers
+// Stretch Leggings
+// Pleated Midi Skirt
+// Flared Palazzo Pants
+// High-Rise Joggers
+// Paperbag Waist Shorts
+// Stretch Denim Shorts
+// Culottes Front View
+// Classic Pleated Trousers Front View
+// Knitted Cropped Top
+// Boho Floral Blouse
+// Casual T-Shirt
+// Off-Shoulder Top
+// Lace-Trimmed Cami Top
+// Graphic Print Tee
+// Ribbed Long-Sleeve Top
+// Ruffle-Sleeve Blouse
+// Classic Button-Up Shirt
+// V-Neck Wrap Top
