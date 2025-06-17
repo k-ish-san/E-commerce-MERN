@@ -49,7 +49,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Welcome to the API!");
 });
-app.options('*', cors(corsOptions));
+
 
 // API Routes
 app.use("/api/users", userRoutes);
@@ -66,18 +66,6 @@ app.use("/api/admin/products", productAdminRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
 
 
-app.use((req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", req.headers.origin || "*");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.status(404).json({ message: "Route not found" });
-});
-
-app.use((err, req, res, next) => {
-  console.error("🔥 Error caught:", err.message);
-  res.setHeader("Access-Control-Allow-Origin", req.headers.origin || "*");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.status(500).json({ error: err.message });
-});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
