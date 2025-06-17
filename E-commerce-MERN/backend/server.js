@@ -25,7 +25,7 @@ connectDB();
 const corsOptions = {
   origin: (origin, callback) => {
     const allowedOrigins = [
-      "https://mern-frontend-tau-two.vercel.app",
+      "https://e-commerce-mern-frontend-lwty.onrender.com//",
       "http://192.168.98.73:5173",
       "http://localhost:5173",
       process.env.FRONTEND_URL,
