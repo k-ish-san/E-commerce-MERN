@@ -102,11 +102,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=45",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919609/No-Boundaries-Men-s-Big-Men-s-Rayon-Print-Button-Up-Shirt-with-Resort-Shirt-Short-Sleeves-Sizes-XS-5XL_d818274f-6ab0-4592-84ef-d7a813ed76aa.e381499f960e57bf6ad7403a24021d47_usrnsy.jpg",
         altText: "Printed Resort Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=1",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919692/https_3A_2F_2Fimage.hm.com_2Fassets_2Fhm_2F1c_2Fc5_2F1cc58f7c4b14a2529810c4793a7bca7915614a10.jpg_3Fimwidth_3D2160_large_afpesm.webp",
         altText: "Printed Resort Shirt Back View",
       },
     ],
@@ -130,11 +130,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=47",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919775/hb-stretch-ls-bus-shirt-white-front-10004560_w98zrf.jpg",
         altText: "Slim-Fit Easy-Iron Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=2",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919813/BB_100200051_4_gozad3.jpg",
         altText: "Slim-Fit Easy-Iron Shirt Front View",
       },
     ],
@@ -158,11 +158,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=3",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919948/MODEL-PMS24119P2-A224-4_eoaxnb.jpg",
         altText: "Polo T-Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=4",
+        url: "https://res.cloudinary.com/dc4gefidz/image/upload/v1747919949/4_f85c101c-98cf-4729-a975-c0822afe793b_1024x_cg9qjw.jpg",
         altText: "Polo T-Shirt Back View",
       },
     ],
