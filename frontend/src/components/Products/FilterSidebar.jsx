@@ -112,7 +112,7 @@ const FilterSidebar = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-800">
+    <div className="p-4 bg-gray-800 h-full max-h-[90vh] overflow-y-auto  max-w-[280px]">
       <h3 className="text-xl font-bold text-center text-white mb-4 ">Filter</h3>
 
       {/* Category Filter */}
@@ -122,7 +122,10 @@ const FilterSidebar = () => {
         </label>
 
         {categories.map((category) => (
-          <div key={category} className="flex items-center p-2 rounded-lg bg-gray-200 mb-1">
+          <div
+            key={category}
+            className="flex items-center p-2 rounded-lg bg-gray-200 mb-1"
+          >
             <input
               type="radio"
               name="category"
@@ -141,7 +144,10 @@ const FilterSidebar = () => {
         <label className="block text-gray-200 font-medium mb-2 ">Gender</label>
 
         {genders.map((gender) => (
-          <div key={gender} className="flex items-center p-2 rounded-lg bg-gray-200 mb-1">
+          <div
+            key={gender}
+            className="flex items-center p-2 rounded-lg bg-gray-200 mb-1"
+          >
             <input
               type="radio"
               name="gender"
@@ -178,7 +184,10 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-200 font-medium mb-2">Size</label>
         {sizes.map((size) => (
-          <div key={size} className="flex items-center  bg-gray-200 rounded-lg p-2 mb-1">
+          <div
+            key={size}
+            className="flex items-center  bg-gray-200 rounded-lg p-2 mb-1"
+          >
             <input
               type="checkbox"
               name="size"
@@ -197,7 +206,10 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-200 font-medium mb-2">Material</label>
         {materials.map((material) => (
-          <div key={material} className="flex bg-gray-200 rounded-lg p-2 items-center mb-1">
+          <div
+            key={material}
+            className="flex bg-gray-200 rounded-lg p-2 items-center mb-1"
+          >
             <input
               type="checkbox"
               name="material"
@@ -216,7 +228,10 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-600 font-medium mb-2">Brand</label>
         {brands.map((brand) => (
-          <div key={brand} className="flex items-center bg-gray-200 p-2 rounded-lg mb-1">
+          <div
+            key={brand}
+            className="flex items-center bg-gray-200 p-2 rounded-lg mb-1"
+          >
             <input
               type="checkbox"
               name="brand"
