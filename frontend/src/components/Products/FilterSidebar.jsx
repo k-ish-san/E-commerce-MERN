@@ -112,7 +112,7 @@ const FilterSidebar = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-800 h-full max-h-[90vh] overflow-y-auto w-[200px]">
+    <div className="p-4 bg-gray-800">
       <h3 className="text-xl font-bold text-center text-white mb-4 ">Filter</h3>
 
       {/* Category Filter */}
@@ -122,17 +122,14 @@ const FilterSidebar = () => {
         </label>
 
         {categories.map((category) => (
-          <div
-            key={category}
-            className="flex items-center p-2 rounded-lg bg-gray-200 mb-1"
-          >
+          <div key={category} className="flex items-center p-2 rounded-lg bg-gray-200 mb-1">
             <input
               type="radio"
               name="category"
               value={category}
               onChange={handleFilterChange}
               checked={filters.category === category}
-              className="h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{category}</span>
           </div>
@@ -144,17 +141,14 @@ const FilterSidebar = () => {
         <label className="block text-gray-200 font-medium mb-2 ">Gender</label>
 
         {genders.map((gender) => (
-          <div
-            key={gender}
-            className="flex items-center p-2 rounded-lg bg-gray-200 mb-1"
-          >
+          <div key={gender} className="flex items-center p-2 rounded-lg bg-gray-200 mb-1">
             <input
               type="radio"
               name="gender"
               value={gender}
               onChange={handleFilterChange}
               checked={filters.gender === gender}
-              className=" h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{gender}</span>
           </div>
@@ -184,17 +178,14 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-200 font-medium mb-2">Size</label>
         {sizes.map((size) => (
-          <div
-            key={size}
-            className="flex items-center  bg-gray-200 rounded-lg p-2 mb-1"
-          >
+          <div key={size} className="flex items-center  bg-gray-200 rounded-lg p-2 mb-1">
             <input
               type="checkbox"
               name="size"
               value={size}
               onChange={handleFilterChange}
               checked={filters.size.includes(size)}
-              className=" h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{size}</span>
           </div>
@@ -206,17 +197,14 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-200 font-medium mb-2">Material</label>
         {materials.map((material) => (
-          <div
-            key={material}
-            className="flex bg-gray-200 rounded-lg p-2 items-center mb-1"
-          >
+          <div key={material} className="flex bg-gray-200 rounded-lg p-2 items-center mb-1">
             <input
               type="checkbox"
               name="material"
               value={material}
               onChange={handleFilterChange}
               checked={filters.material.includes(material)}
-              className=" h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{material}</span>
           </div>
@@ -228,17 +216,14 @@ const FilterSidebar = () => {
       <div className="mb-6">
         <label className="block text-gray-600 font-medium mb-2">Brand</label>
         {brands.map((brand) => (
-          <div
-            key={brand}
-            className="flex items-center bg-gray-200 p-2 rounded-lg mb-1"
-          >
+          <div key={brand} className="flex items-center bg-gray-200 p-2 rounded-lg mb-1">
             <input
               type="checkbox"
               name="brand"
               value={brand}
               onChange={handleFilterChange}
               checked={filters.brand.includes(brand)}
-              className=" h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{brand}</span>
           </div>
