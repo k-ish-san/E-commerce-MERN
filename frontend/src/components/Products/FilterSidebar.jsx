@@ -112,7 +112,7 @@ const FilterSidebar = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-800 h-full max-h-[90vh] overflow-y-auto  max-w-[280px]">
+    <div className="p-4 bg-gray-800 h-full max-h-[90vh] overflow-y-auto">
       <h3 className="text-xl font-bold text-center text-white mb-4 ">Filter</h3>
 
       {/* Category Filter */}
@@ -132,7 +132,7 @@ const FilterSidebar = () => {
               value={category}
               onChange={handleFilterChange}
               checked={filters.category === category}
-              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className="h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{category}</span>
           </div>
@@ -154,7 +154,7 @@ const FilterSidebar = () => {
               value={gender}
               onChange={handleFilterChange}
               checked={filters.gender === gender}
-              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className=" h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{gender}</span>
           </div>
@@ -194,7 +194,7 @@ const FilterSidebar = () => {
               value={size}
               onChange={handleFilterChange}
               checked={filters.size.includes(size)}
-              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className=" h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{size}</span>
           </div>
@@ -216,7 +216,7 @@ const FilterSidebar = () => {
               value={material}
               onChange={handleFilterChange}
               checked={filters.material.includes(material)}
-              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className=" h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{material}</span>
           </div>
@@ -238,7 +238,7 @@ const FilterSidebar = () => {
               value={brand}
               onChange={handleFilterChange}
               checked={filters.brand.includes(brand)}
-              className="mr-2 h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
+              className=" h-4 w-4 accent-blue-500 focus:ring-blue-400 border-gray-300"
             />
             <span className="text-gray-700">{brand}</span>
           </div>
