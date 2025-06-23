@@ -112,7 +112,7 @@ const FilterSidebar = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-800 h-full max-h-[90vh] overflow-y-auto">
+    <div className="p-4 bg-gray-800 h-full max-h-[90vh] overflow-y-auto w-[200px]">
       <h3 className="text-xl font-bold text-center text-white mb-4 ">Filter</h3>
 
       {/* Category Filter */}
